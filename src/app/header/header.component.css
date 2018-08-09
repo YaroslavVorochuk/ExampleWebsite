@@ -1,0 +1,26 @@
+.all{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin: 5px;
+}
+p{
+    width: 53px;
+    height: 14px;
+    color: #68748a;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #07d16b;
+    border-bottom-color: #07d16b;
+    font-family: "Open Sans";
+    color: #ffffff;
+}
