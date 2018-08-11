@@ -1,0 +1,13 @@
+.chart{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    background-color: white;
+    width: 96%;
+}
+
+img{
+    max-width: 100%;
+}
