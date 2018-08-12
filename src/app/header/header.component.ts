@@ -12,5 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  question() {
+    console.log("Ask question")
+  }
+
 
 }
