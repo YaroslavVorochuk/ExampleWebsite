@@ -33,6 +33,10 @@
   line-height: 24px;
 }
 
+.head-selects{
+  display: flex;
+}
+
 .select-category {
   margin-right: 20px;
   border-radius: 20px;
@@ -339,13 +343,13 @@
   line-height: 24px;
 }
 
-.info-r-b{
+.info-r-b {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.info-r-b-head{
+.info-r-b-head {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -359,28 +363,90 @@
   line-height: 22px;
 }
 
-.q-text{
+.q-text {
   color: #68748a;
-font-family: "Open Sans";
-font-size: 14px;
-font-weight: 400;
-padding: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px;
 }
 
-.delete{
+.delete {
   display: flex;
   justify-content: center;
 }
 
-.del-but{
+.del-but {
   width: 160px;
-height: 40px;
-border-radius: 20px;
-border: 1px solid #fa4056;
-color: #fa4056;
-font-family: "Open Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-background-color: #ffffff;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #fa4056;
+  color: #fa4056;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .main-bottom {
+    display: none;
+  }
+
+  .cat-buttons {
+    display: none;
+  }
+
+  .repl {
+    display: none;
+  }
+
+  .big-chart-head {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+  }
+
+  .head-selects {
+    width: 100%;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* align-content: flex-start; */
+    align-items: center;
+  }
+
+  .select-time {
+    width: 85%;
+  }
+
+  .select-category {
+    width: 85%;
+  }
+
+  .cxm-index {
+    width: 85%;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .categories {
+    justify-content: center;
+    align-items: center;
+  }
+  .categ{
+    color: #4086fa;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
 }
