@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ChartsComponent } from './charts/charts.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
+import { ChartModule } from 'angular-highcharts';
 
 
 
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/fo
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
