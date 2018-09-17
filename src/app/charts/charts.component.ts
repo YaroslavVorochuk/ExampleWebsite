@@ -46,17 +46,31 @@ export class ChartsComponent implements OnInit, AfterViewInit {
           pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
               '<td style="padding:0"><b>{point.y:.2f} $</b></td></tr>',
           footerFormat: '</table>',
-          shared: true,
-          useHTML: true
+          shared: false,
+          useHTML: false
       },
+      legend: {
+        enabled: false
+    },
       plotOptions: {
           column: {
               pointPadding: 0.1,
               borderWidth: 0
-          }
+          },
+          spline: {
+            lineWidth: 4,
+            states: {
+                hover: {
+                    lineWidth: 5
+                }
+            },
+            marker: {
+                enabled: false
+            },
+        }
       },
       series: [{
-          name: 'CXM Index',
+          name: ' ',
           data: [49.9, 71.5, 10.4, 12.2, 14.0, 17.0, 13.6]
       }
   ],
@@ -65,5 +79,7 @@ export class ChartsComponent implements OnInit, AfterViewInit {
   this._chart = new Highcharts.Chart(this.chartElement.nativeElement, chartOptions);
 
 }
+
+
 
 }
